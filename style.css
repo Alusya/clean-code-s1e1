@@ -12,7 +12,7 @@ body {
   text-align: right;
 }
 
-.title-block img {
+.title-img {
   width: 100%;
 }
 
@@ -22,7 +22,8 @@ body {
 
 @media (max-width:768px) {
 
-.title-block { text-align: center;
+.title-block { 
+    text-align: center;
 }
 
 }
@@ -36,7 +37,7 @@ body {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .task-wrapper {
@@ -147,18 +148,18 @@ li > * {
 
 /* Completed */
 .completed-tasks {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 .hidden {
-    display: none
+    display: none;
 }
 
 .task-input {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .hidden-label{
