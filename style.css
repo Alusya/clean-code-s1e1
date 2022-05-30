@@ -58,7 +58,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for='new-task'] {
+.new-task {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -106,43 +106,40 @@ li > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.todo-checkbox {
     margin: 0 10px;
 }
-li > label {
+.task {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
-    width: 226px
-}
-button.delete img {
+.remove-pic {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.remove-pic:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.completed-tasks {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.hidden {
     display:none
 }
 
-ul li.edit-mode input[type=text] {
+.task-input {
     display:inline-block;
     width:224px
 }
 
-ul li.edit-mode label {
+.hidden-label{
     display:none;
 }

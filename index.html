@@ -17,7 +17,7 @@
   </div>
   <div class="main-page">
     <p id="add-section">
-      <label for="new-task">Add Item</label>
+      <label class="new-task" for="new-task">Add Item</label>
       <div class="task-wrapper">
         <input id="new-task"
                class="task" 
@@ -28,32 +28,31 @@
     <h3>Todo</h3>
     <ul id="incomplete-tasks">
       <li>
-        <input type="checkbox">
+        <input class="todo-checkbox" type="checkbox">
         <label class="task">Pay Bills</label>
         <input type="text" 
-               class="task">
+               class="task hidden">
         <button class="edit">Edit</button>
-        <button class="delete"><img src="./remove.svg"></button>
+        <button class="delete"><img src="./remove.svg" class="remove-pic"></button>
       </li>
       <li class="edit-mode">
-        <input type="checkbox">
-        <label class="task">Go Shopping</label>
+        <input class="todo-checkbox" type="checkbox">
+        <label class="task hidden-label">Go Shopping</label>
         <input type="text" 
                value="Go Shopping" 
-               class="task">
+               class="task task-input">
         <button class="edit">Save</button>
-        <button class="delete"><img src="./remove.svg"></button></li>
+        <button class="delete"><img src="./remove.svg" class="remove-pic"></button></li>
     </ul>
     <h3>Completed</h3>
     <ul id="completed-tasks">
       <li>
-        <input type="checkbox" 
+        <input class="todo-checkbox" type="checkbox" 
                checked>
-        <label class="task">See the Doctor</label>
-        <input type="text" 
-               class="task">
+        <label class="task completed-tasks">See the Doctor</label>
+        <input class="hidden" type="text">
         <button class="edit">Edit</button>
-        <button class="delete"><img src="./remove.svg"></button>
+        <button class="delete"><img src="./remove.svg" class="remove-pic"></button>
       </li>
     </ul>
   </div>
