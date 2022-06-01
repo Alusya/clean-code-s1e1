@@ -39,7 +39,7 @@ var createNewTaskElement=function(taskString){
     checkBox.type="checkbox";
     checkBox.className = "todo-checkbox"
     editInput.type="text";
-    editInput.className="task hidden";
+    editInput.className="task task-input hidden";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="edit";
@@ -97,10 +97,12 @@ var editTask=function(){
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
         editInput.classList.add("hidden")
+        label.classList.remove("hidden-label")
     }else{
         editInput.value=label.innerText;
         editBtn.innerText="Save";
         editInput.classList.remove("hidden")
+        label.classList.add("hidden-label")
     }
 
     //toggle .edit-mode on the parent.
